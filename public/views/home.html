@@ -1,0 +1,59 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-3">
+            <div class="card p-3">
+                <button class="btn btn-primary" onclick="getAllUser()">get all user</button>
+                <br>
+                <ul id="liste1"></ul>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card p-3">
+                    <input type="text" id="inputUserId" class="form-control" placeholder="user id">
+                    <br>
+                <div class="alert alert-danger" id="errorAlert1" style="display:none" role="alert">
+                    veuillez remplir le champs
+                </div>
+                <button class="btn btn-primary" onclick="getUserById()">get user from id</button>
+                <br>
+                <ul id="liste2"></ul>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card p-3">
+                <input type="text" id="inputUserPseudo" class="form-control" placeholder="user pseudo">
+                <br>
+                <input type="email" id="inputUserEmail" class="form-control" placeholder="user email">
+                <br>
+                <input type="password" id="inputUserPassword" class="form-control" placeholder="user password">
+                <br>
+                <div class="alert alert-danger" id="errorAlert2" style="display:none" role="alert">
+                    veuillez remplir les champs
+                </div>
+                <button class="btn btn-primary" type="submit" onclick="postUser()">post user</button>
+                <br>
+                <ul id="liste3"></ul>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card p-3">
+                <input type="email" id="inputUserEmailLogin" class="form-control" placeholder="user email">
+                <br>
+                <input type="password" id="inputUserPasswordLogin" class="form-control" placeholder="user password">
+                <br>
+                <div class="alert alert-danger" id="errorAlert3" style="display:none" role="alert">
+                    veuillez remplir les champs
+                </div>
+                <button class="btn btn-primary" type="submit" onclick="login()">login user</button>
+                <br>
+                <ul id="liste4"></ul>
+            </div>
+        </div>
+        <form action="/posts/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" id="inputImage" name="image" onchange="preview()">
+            <img id="frame" src="" width="100px" height="100px" alt="preview">
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+</div>
+

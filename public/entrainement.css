@@ -1,0 +1,35 @@
+.div_image{
+    height: 150px;
+    margin: 15px;
+    color: white;
+    padding: 5px;
+}
+
+#id_main{
+    display: flex;
+    flex-direction: column;
+}
+
+#id_entrainement{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.53), rgba(51, 50, 50, 0.13)),url("../../0front/assets/entrainement.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter : drop-shadow(3px 3px 5px #1f1f1f);
+}
+
+#id_favoris{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.53), rgba(51, 50, 50, 0.13)),url("../../0front/assets/favoris.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter : drop-shadow(3px 3px 5px #1f1f1f);
+}
+
+#id_historique{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.53), rgba(51, 50, 50, 0.13)),url("../../0front/assets/historique.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter : drop-shadow(3px 3px 5px #1f1f1f);
+}

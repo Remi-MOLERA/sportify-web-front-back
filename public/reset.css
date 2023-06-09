@@ -1,0 +1,31 @@
+/*Applique a tous les éléments*/
+* {
+    margin: 0; /*Réinitialiser la marge*/
+    padding: 0; /*Réinitialiser le padding*/
+    box-sizing: border-box; /*La taille des éléments incluent le contenu, le padding et les bordures*/
+    line-height: inherit;  /* Hériter les valeurs depuis l'élément parent*/
+    color: inherit;
+    font: inherit;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+/*Entête*/
+.banner{
+    background-color: #14213D;
+    height: 90px;
+    color : orange;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+body{
+    background-color: #E5E5E5;
+}
